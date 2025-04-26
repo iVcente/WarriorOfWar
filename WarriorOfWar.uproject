@@ -1,0 +1,22 @@
+{
+	"FileVersion": 3,
+	"EngineAssociation": "{1D8BAFED-4BD1-AE15-2566-61976DDDDC5E}",
+	"Category": "",
+	"Description": "",
+	"Modules": [
+		{
+			"Name": "WarriorOfWar",
+			"Type": "Runtime",
+			"LoadingPhase": "Default"
+		}
+	],
+	"Plugins": [
+		{
+			"Name": "ModelingToolsEditorMode",
+			"Enabled": true,
+			"TargetAllowList": [
+				"Editor"
+			]
+		}
+	]
+}
