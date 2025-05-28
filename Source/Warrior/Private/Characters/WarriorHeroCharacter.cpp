@@ -6,6 +6,7 @@
 #include "GameFramework/CharacterMovementComponent.h"
 #include "GameplayTags/WarriorGameplayTags.h"
 #include "EnhancedInputSubsystems.h"
+#include "AbilitySystem/WarriorAbilitySystemComponent.h"
 
 
 AWarriorHeroCharacter::AWarriorHeroCharacter()
@@ -30,6 +31,15 @@ AWarriorHeroCharacter::AWarriorHeroCharacter()
 	GetCharacterMovement()->RotationRate = FRotator(0.f,500.f,0.f);
 	GetCharacterMovement()->MaxWalkSpeed = 400.f;
 	GetCharacterMovement()->BrakingDecelerationWalking = 2000.f;
+}
+
+void AWarriorHeroCharacter::PossessedBy(AController* NewController)
+{
+	Super::PossessedBy(NewController);
+ 
+	if (WarriorAbilitySystemComponent && WarriorAttributeSet)
+	{	
+	}
 }
 
 void AWarriorHeroCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)

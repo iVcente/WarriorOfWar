@@ -15,7 +15,9 @@ public class Warrior : ModuleRules
 				"CoreUObject", 
 				"Engine",
 				"EnhancedInput",
+				"GameplayAbilities",
 				"GameplayTags",
+				"GameplayTasks",
 				"InputCore"
 			}
 		);
